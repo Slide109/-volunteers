@@ -1,0 +1,8 @@
+.wrapper {
+    grid-area: map;
+    align-self: stretch;
+}
+
+.wrapper > div {
+    height: 100%;
+}

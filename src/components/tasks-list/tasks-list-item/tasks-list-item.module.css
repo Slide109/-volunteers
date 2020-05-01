@@ -1,0 +1,33 @@
+.item {
+    padding: 5px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px repeat(3, 1fr) 80px;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #e5e5f9;
+}
+
+.item [class*="label"] {
+    justify-self: end;
+}
+
+.Assigned {
+    background-color: #32b643;
+    color: #fff;
+}
+
+.date {
+    justify-self: center;
+}
+
+.title {
+
+}
+
+.description {
+
+}

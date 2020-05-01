@@ -1,0 +1,12 @@
+mutation Authorization($phone: String!, $password: String!) {
+  authorization(input: { phone: $phone, password: $password }) {
+    token
+    user {
+      id
+      firstName
+      lastName
+      phone
+      role
+    }
+  }
+}

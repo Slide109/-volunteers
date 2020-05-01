@@ -1,0 +1,6 @@
+.container {
+    height: 100%;
+    display: grid;
+    row-gap: 20px;
+    align-content: center;
+}

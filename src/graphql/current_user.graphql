@@ -1,0 +1,12 @@
+query CurrentUser {
+    user:whoAmI {
+        id
+        firstName
+        lastName
+        email
+        role
+        age
+        bio
+        gender
+    }
+}

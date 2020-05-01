@@ -1,0 +1,6 @@
+mutation ValidatePhone($phone: String!, $code: String!) {
+  validatePhone(validatePhoneInput: {
+    phone: $phone,
+    code: $code
+  })
+}

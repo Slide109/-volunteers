@@ -1,0 +1,30 @@
+query FIND_TASK($id: String!) {
+	task(id: $id) {
+        id
+        title
+        description
+        user {
+          id
+          firstName
+          lastName
+          role
+          email
+          bio
+          age
+          gender
+        }
+        assignee {
+          id
+          firstName
+          lastName
+          role
+          email
+          bio
+          age
+          gender
+        }
+        coordinates
+        status
+  	    created_at
+  }
+}

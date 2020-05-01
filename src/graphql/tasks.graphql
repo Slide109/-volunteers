@@ -1,0 +1,32 @@
+query TASKS_QUERY(
+    $user: String,
+    $assignee: String,
+    $status: [TaskStatus!]
+  ) {
+  tasks(filters: {
+      user: $user,
+      assignee: $assignee,
+      status: $status
+    }) {
+    id
+    title
+    description
+    user {
+      id
+      firstName
+      lastName
+      role
+      email
+    }
+    assignee {
+      id
+      firstName
+      lastName
+      role
+      email
+    }
+    status
+    coordinates
+    created_at
+  }
+}

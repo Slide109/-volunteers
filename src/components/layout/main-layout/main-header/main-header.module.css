@@ -1,0 +1,47 @@
+.header {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    justify-items: end;
+    column-gap: 20px;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.navigation {
+    justify-self: center;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navigation ul > a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.navigation li {
+    margin: 0;
+}
+
+.navigation a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12px;
+}
+
+@media (max-width: 680px) {
+    .logoText,
+    .navigation {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+mutation CreateTask($title: String!, $description: String, $coordinates: String) {
+    taskCreate(taskInput: {
+        title: $title,
+        description: $description,
+        coordinates: $coordinates,
+    }) {
+        id
+    }
+}

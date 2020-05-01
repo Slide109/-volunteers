@@ -1,0 +1,6 @@
+mutation UpdateTaskStatus($status: TaskStatus!, $taskID: String!) {
+    updateTaskStatus(input: {
+        status: $status,
+        taskID: $taskID
+    })
+}

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.createBtn {
+    border: 1px dashed #807fe2;
+    border-radius: 5px;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.createBtn:hover {
+    background-color: #e5e5f9;
+}
+
+.createBtn i {
+    margin-right: 5px;
+}

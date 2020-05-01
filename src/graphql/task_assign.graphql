@@ -1,0 +1,5 @@
+mutation TaskAssign($taskID: String!) {
+    assignTask(input: {
+        taskID: $taskID
+    })
+}

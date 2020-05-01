@@ -1,0 +1,14 @@
+query VolunteerStat($userID: String!) {
+    assigned:tasks(filters: {
+        status: Assigned,
+        assignee: $userID,
+    }) {
+        __typename
+    }
+    finished:tasks(filters: {
+        status: Completed,
+        assignee: $userID,
+    }) {
+        __typename
+    }
+}

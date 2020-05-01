@@ -1,0 +1,23 @@
+query AssignedTasks {
+    assignedTasks {
+        id
+        title
+        description
+        user {
+            id
+            firstName
+            lastName
+            role
+            email
+        }
+        assignee {
+            id
+            firstName
+            lastName
+            role
+            email
+        }
+        status
+        created_at
+    }
+}

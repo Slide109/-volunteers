@@ -1,0 +1,13 @@
+.aside {
+    padding: 30px 20px;
+    box-shadow: 5px 0 5px -5px #333;
+
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    row-gap: 20px;
+    align-content: start;
+}
+
+.copyright {
+    align-self: end;
+}
